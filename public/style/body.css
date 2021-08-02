@@ -1,0 +1,117 @@
+/* ************************* Hero-bar ************************************************** */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-image: url(/public/image/197.png);
+    height: 300px;
+}
+/* hero content */
+.hero__content{
+
+}
+.hero__title{
+    color: white;
+}
+.hero__text{
+    color: white;
+}
+/* hero button */
+.hero__btn{
+    
+}
+.hero__btn > button {
+    border-radius: 30px;
+}
+
+/* ********************* taget************************************************************ */
+
+.taget {
+    padding: 0;
+}
+
+/* taget icon */
+.taget__icon{
+    padding: 0;
+    width: 30px;
+}
+.taget__icon > i {
+    font-size: 30px;
+    color: #5580ff;
+}
+
+/* taget content */
+.taget__content {}
+.taget__content > h3{
+    color: #58468c;
+}
+.taget__desc > p {
+    color: #716c80;
+}
+
+/* ************************* fact *********************************************************** */
+
+.fact{}
+.fact-item{}
+.fact-item__title{
+    position: relative;
+}
+.fact-item__progress-bar{}
+.fact-item__img{
+    margin-left: 50px;
+    width: 400px;
+}
+
+/* img{
+    width: 100%;
+} */
+
+.fact-item__progress-bar > h5{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.pb-content-holder{
+    position: relative;
+    height: 5px;
+    overflow: hidden;
+    background-color: #f0f5ff;
+}
+.pb-content{
+    height: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #ff8a73;
+}
+
+/* ************************************** box-card *********************************** */
+
+.box-card{
+}
+.box-card-item{
+    display: block;
+    align-items: center;
+}
+.box-card-item__img{
+    width: 100px;
+    margin: 10px;
+}
+.box-card-item__body{
+    align-items: center;
+}
+
+/* *********************************** app-footer ***************************************** */
+
+.app-footer{
+    background-color: #343352;
+    color: white;
+}
+.footer-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.app-footer__about{}
+

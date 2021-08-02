@@ -1,0 +1,50 @@
+
+/* **************************************************88 */
+/* Section Top-bar */
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    font-weight: bold;
+}
+/* Logo */
+.top-bar__logo{  
+}
+.top-bar__logo > img{
+}
+/* Menu */
+.top-bar__menu{
+    display: flex;
+    flex-flow: row;
+    
+    list-style-type: none;
+}
+.top-bar__menu > li{
+    padding-left: 15px;
+}
+.top-bar__menu > li > a {
+    color: #58468c;
+    text-decoration: none;
+}
+
+.top-bar__menu > li :hover {
+    color: tomato;
+} 
+
+/* Icon */
+.top-bar__icon{
+    display: flex;
+    flex-flow: row;
+    justify-content:space-around;
+    list-style-type: none;
+}
+.top-bar__icon >li{}
+.top-bar__icon > li > a {
+    padding-left: 15px;
+    color: #58468c;
+}
+
+.top-bar__icon > li > a :hover {
+    color: tomato;
+}

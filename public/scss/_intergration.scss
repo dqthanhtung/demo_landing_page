@@ -1,0 +1,123 @@
+.intergration {
+
+    &--space {
+
+        padding-bottom: 80px;
+        margin-bottom: 0;
+    }
+
+    &--pd-0 {
+        
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__inner {
+
+        padding: 0 15px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    &__title {
+
+        display: block;
+        margin: 0;
+        font-size: 2.8125rem; // 45px
+        font-weight: 400;
+        line-height: 1.22em;
+        color: $title-color;
+    }
+
+    &__text {
+
+        font-size: 1.25rem; // 20px
+        font-weight: 300;
+        line-height: 1.6em;
+        margin: 14px 0 0;
+        color: $text-color;
+    }
+
+    &__btn {
+
+        padding: 15px 37px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 138, 115);
+        font-size: 0.75rem; // 12px
+        font-weight: 500;
+        letter-spacing: .125em;
+        line-height: 40px;
+        text-transform: uppercase;
+        border-radius: 3em;
+        outline: none;
+        cursor: pointer;
+        @include transition-ease;
+
+        &:hover {
+
+            box-shadow: rgba(255, 138, 115, 0.5) 0 10px 25px 0;
+            color: rgb(255, 255, 255);;
+        }
+    }
+
+    &__box {
+
+        display: inline-block;
+        width: 100%;
+    
+        &__inner {
+
+            padding: 30px 0px 30px 30px;
+            width: 252.5px;
+            text-align: center;
+            box-shadow: rgba(137, 173, 255, 0.35) 0 10px 55px 5px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        &__wrapper {
+
+            display: inline-block;
+            vertical-align: text-top;
+        }
+
+        &__content {
+
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0;
+            line-height: 1.2em;
+    
+            a {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+
+        &__icon {
+
+            display: table-cell;
+            vertical-align: middle;
+            line-height: 0;
+        }
+
+        &__title {
+
+            text-align: left;
+            margin: 0;
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.2em;
+            color: $title-color;
+        }
+
+        &__text {
+
+            font-size: 0.6875rem; // 11px
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: .125em;
+        }
+    }   
+}
