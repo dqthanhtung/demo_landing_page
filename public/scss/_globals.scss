@@ -28,3 +28,15 @@ ul {
 @mixin transition-ease {
     transition: 0.2s all ease;
 }
+
+@mixin medium-screen() {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin large-screen() {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
