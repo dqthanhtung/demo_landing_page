@@ -2,6 +2,7 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *, *::before, *::after {
@@ -21,6 +22,7 @@ body {
   font-size: 1rem;
   color: #716c80;
 }
+
 
 #myBtn {
   /* display: none; /* Hidden by default */
@@ -232,6 +234,7 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: flex-end;
     margin-left: 1rem;
   }
   .header__icon a {
@@ -334,6 +337,12 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+  .fact-item__img {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .fact-item__img {
     margin-left: 50px;
   }
