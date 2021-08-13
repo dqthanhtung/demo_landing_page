@@ -25,18 +25,56 @@ ul {
     list-style-type: none;
 }
 
-@mixin transition-ease {
-    transition: 0.2s all ease;
+h1, h2, h3, h4 {
+    color: #58468c;
+}
+  
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.22em;
 }
 
-@mixin medium-screen() {
-    @media screen and (min-width: 768px) {
-        @content;
-    }
+input, textarea {
+    display: block;
+    background-color: #f5f6ff;
+    border-color: #f5f6ff;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 14px 30px;
+    font-size: .6875rem;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .125em;
+    color: #807d78;
+    border: 0;
+    border-radius: 8px;
+    outline: 0;
+    cursor: pointer;
 }
 
-@mixin large-screen() {
-    @media screen and (min-width: 992px) {
-        @content;
+input::placeholder, textarea::placeholder {
+    text-transform: uppercase;
+}
+
+.btn {
+    padding: 0 59px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: #ff8a73;
+    font-size: 0.75rem; // 12px
+    font-weight: bold;
+    letter-spacing: .125em;
+    line-height: 50px;
+    text-transform: uppercase;
+    border-radius: 3em;
+    outline: none;
+    cursor: pointer;
+    @include transition-ease;
+
+    &:hover {
+
+        box-shadow: rgba(255, 138, 115, 0.5) 0 10px 25px 0;
+        color: rgb(255, 255, 255);;
     }
 }
