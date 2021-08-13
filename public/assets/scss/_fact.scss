@@ -1,0 +1,81 @@
+/*	Fact
+================================================================================ */
+.fact {
+
+	padding-top: 50px;
+
+
+	h3 {
+		padding: 0 2.2rem;
+		margin: 20px 0;
+		font-size: 1.5rem;
+
+		@include medium-screen {
+			font-size: 2.6rem;
+		}
+
+		@include large-screen {
+			font-size: 2.8rem;
+		}
+	}
+
+	.fact-item {
+		
+		width: 100%;
+		font-size: 1rem;
+
+		@include medium-screen {
+			width: 80%;
+		}
+	
+		li {
+			position: relative;
+			margin-bottom: 2.125rem;
+	
+			.bar-container,
+			.bar {	
+				position: absolute;
+				left: 0;
+				height: 5px;	
+				border-radius: 5px;
+				content: "";
+			}
+	
+			.bar-container {
+				bottom: -8px;
+				width: 100%;
+				background-color: #333;
+				text-align: right;
+	
+				.bar {
+					top: 0;
+				}
+	
+				.pct {
+					position: absolute;
+					top: 10px;
+					right: 0;
+					opacity: 0;
+					transition: opacity 0.3s linear;
+					text-align: right;
+				}
+			}
+		}
+
+		&__img {
+			
+			@include medium-screen {
+				margin-top: -8rem;
+			}
+
+			img {
+				margin: 0 auto;
+				width: 500px;
+
+				@include medium-screen {
+					margin-left: 30px;
+				}
+			}
+		}
+	}
+}

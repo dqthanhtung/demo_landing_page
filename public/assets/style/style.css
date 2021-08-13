@@ -395,49 +395,95 @@ input::placeholder, textarea::placeholder {
   color: #716c80;
 }
 
-.fact-item__title{
-  position: relative;
+/*	Fact
+================================================================================ */
+.fact {
+  padding-top: 50px;
 }
 
-.fact-item__img{
-  margin: 0 auto;   
-  width: 400px;
+.fact h3 {
+  padding: 0 2.2rem;
+  margin: 20px 0;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
-  .fact-item__img {
-    margin-left: 50px;
+  .fact h3 {
+    font-size: 2.6rem;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .fact-item__img {
-    margin-left: 50px;
+  .fact h3 {
+    font-size: 2.8rem;
   }
 }
 
-.fact-item__progress-bar > h5{
-  display: flex;
-  justify-content: space-between;
-  height: 30px;
+.fact .fact-item {
+  width: 100%;
+  font-size: 1rem;
 }
 
-.pb-content-holder{
+@media screen and (min-width: 768px) {
+  .fact .fact-item {
+    width: 80%;
+  }
+}
+
+.fact .fact-item li {
   position: relative;
-  height: 5px;
-  overflow: hidden;
-  background-color: #f0f5ff;
+  margin-bottom: 2.125rem;
 }
 
-.pb-content{
+.fact .fact-item li .bar-container,
+.fact .fact-item li .bar {
+  position: absolute;
+  left: 0;
   height: 5px;
-  max-width: 100%;
-  overflow: hidden;
-  background-color: #ff8a73;
+  border-radius: 5px;
+  content: "";
+}
+
+.fact .fact-item li .bar-container {
+  bottom: -8px;
+  width: 100%;
+  background-color: #333;
+  text-align: right;
+}
+
+.fact .fact-item li .bar-container .bar {
+  top: 0;
+}
+
+.fact .fact-item li .bar-container .pct {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .fact .fact-item__img {
+    margin-top: -8rem;
+  }
+}
+
+.fact .fact-item__img img {
+  margin: 0 auto;
+  width: 500px;
+}
+
+@media screen and (min-width: 768px) {
+  .fact .fact-item__img img {
+    margin-left: 30px;
+  }
 }
 
 .box-card {
-  padding: 4.375rem 0;
+  padding: 1.375rem 0;
 }
 
 @media screen and (min-width: 992px) {
